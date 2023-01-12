@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>All Products - RedStore | Ecommerce Website Design</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" type="text/css"
+		href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+	<script src="https://kit.fontawesome.com/4e55c5f54e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="navbar">
+			<div class="logo">
+				<a href="account.html"><img src="images/logo.png" alt="logo" width="125px"></a>
+			</div>
+			<nav>
+				<ul id="MenuItems">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="products.html">Products</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="account.html">Account</a></li>
+				</ul>
+			</nav>
+			<img src="images/cart.png" width="30px" height="30px">
+			<img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+		</div>
+	</div>
+
+
+	<!---------------cart item details--------------->
+	<div class="small-container cart-page">
+		<table>
+			<tr>
+				<th>Product</th>
+				<th>Quantity</th>
+				<th>Subtotal</th>
+			</tr>
+			<tr>
+				<td>
+					<div class="cart-info">
+						<a href="product-details.html"><img src="images/buy-1.jpg"></a>
+						<div>
+							<p>Red Printed Tshirt</p>
+							<small>price: $8.99</small>
+							<br>
+							<a href="">Remove</a>
+						</div>
+					</div>
+
+				</td>
+				<td><input type="number" value="1"></td>
+				<td>$8.99</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="cart-info">
+						<a href="product-details2.html"><img src="images/buy-2.jpg"></a>
+						<div>
+							<p>Red Printed Tshirt</p>
+							<small>price: $9.99</small>
+							<br>
+							<a href="">Remove</a>
+						</div>
+					</div>
+
+				</td>
+				<td><input type="number" value="1"></td>
+				<td>$9.99</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="cart-info">
+						<a href="product-details3.html"><img src="images/buy-3.jpg"></a>
+						<div>
+							<p>Red Printed Tshirt</p>
+							<small>price: $7.49</small>
+							<br>
+							<a href="">Remove</a>
+						</div>
+					</div>
+
+				</td>
+				<td><input type="number" value="1"></td>
+				<td>$7.49</td>
+			</tr>
+		</table>
+
+		<div class="total-price">
+			<table>
+				<tr>
+					<td>Subtotal</td>
+					<td>$26.47</td>
+				</tr>
+				<tr>
+					<td>Tax</td>
+					<td>$3.52</td>
+				</tr>
+				<tr>
+					<td>Total</td>
+					<td>$29.99</td>
+				</tr>
+				<tr>
+					<div class="checkout">
+						<td>
+							<span style="padding: 5px;">
+								<b><a href="http://127.0.0.1/HTML/checkout.php" target="_self">CHECKOUT</a></b>
+							</span>
+						</td>
+						<td>
+
+						</td>
+				</tr>
+		</div>
+
+		</table>
+	</div>
+	</div>
+
+	<!--------------footer---------------->
+
+	<div class="footer" id="para-2">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<h3>Download Our App</h3>
+					<p>Download App for Android and ios mobile phone.</p>
+					<div class="app-logo">
+						<a href="https://play.google.com/store"><img src="images/play-store.png"></a>
+						<a href="https://www.apple.com/app-store/"><img src="images/app-store.png"></a>
+					</div>
+				</div>
+				<div class="footer-col-2">
+					<a href="account.html"><img src="images/logo-white.png"></a>
+					<p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.
+					</p>
+				</div>
+
+				<div class="footer-col-3">
+					<h3>Useful Links</h3>
+					<ul>
+						<a href="#">
+							<li>Coupons</li>
+						</a>
+						<a href="https://cinemawebmovie.blogspot.com/">
+							<li>Blog Post</li>
+						</a>
+						<a href="#">
+							<li>Return Policy</li>
+						</a>
+						<a href="account.html">
+							<li>Ask Query</li>
+						</a>
+					</ul>
+				</div>
+
+				<div class="footer-col-4">
+					<h3>Follow Us</h3>
+					<ul>
+						<a href="https://www.facebook.com/aman.prasad.127648">
+							<li>Facebook</li>
+						</a>
+						<a href="https://twitter.com/AmanPra83206276">
+							<li>Twitter</li>
+						</a>
+						<a href="https://www.instagram.com/_amanprasad_07/">
+							<li>Instagram</li>
+						</a>
+						<a href="https://www.linkedin.com/in/aman-prasad-796b791b2/">
+							<li>LinkedIn</li>
+						</a>
+					</ul>
+				</div>
+
+			</div>
+
+			<hr>
+			<p class="copyright">Copyright 2022 - RedStore</p>
+
+		</div>
+	</div>
+	<!-------------js for toggle menu------------->
+
+	<script type="text/javascript">
+		var MenuItems = document.getElementById("MenuItems");
+		MenuItems.style.maxHeight = "0px";
+		function menutoggle() {
+			if (MenuItems.style.maxHeight == "0px") {
+				MenuItems.style.maxHeight = "200px";
+			}
+			else {
+				MenuItems.style.maxHeight = "0px";
+			}
+		}
+	</script>
+
+
+</body>
+
+</html>
